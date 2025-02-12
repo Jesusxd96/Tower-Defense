@@ -1,0 +1,199 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.32f1 (12f8b0834f07) revision 1243312'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'en' Physical Memory: 32692 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.32f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+E:/UnityRepos/Tower Defense/Tower Defense
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+54624
+Successfully changed project path to: E:/UnityRepos/Tower Defense/Tower Defense
+E:/UnityRepos/Tower Defense/Tower Defense
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 26.54 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.32f1 (12f8b0834f07)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/UnityRepos/Tower Defense/Tower Defense/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon RX 6750 XT (ID=0x73df)
+    Vendor:   
+    VRAM:     12243 MB
+    Driver:   32.0.11027.2001
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56712
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002309 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 25.09 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.413 seconds
+Domain Reload Profiling:
+	ReloadAssembly (413ms)
+		BeginReloadAssembly (50ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (310ms)
+			LoadAssemblies (48ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (92ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (23ms)
+			SetupLoadedEditorAssemblies (119ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (25ms)
+				BeforeProcessingInitializeOnLoad (13ms)
+				ProcessInitializeOnLoadAttributes (58ms)
+				ProcessInitializeOnLoadMethodAttributes (19ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002051 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.718 seconds
+Domain Reload Profiling:
+	ReloadAssembly (718ms)
+		BeginReloadAssembly (108ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (566ms)
+			LoadAssemblies (73ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (172ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (241ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (63ms)
+				ProcessInitializeOnLoadAttributes (160ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1866 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 84.9 MB.
+System memory in use after: 85.0 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2304.
+Total: 2.520000 ms (FindLiveObjects: 0.147300 ms CreateObjectMapping: 0.041800 ms MarkObjects: 2.267600 ms  DeleteObjects: 0.062900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/_Textures/Jefe
+  artifactKey: Guid(ed444298834d291418d205b3ddff7045) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Textures/Jefe using Guid(ed444298834d291418d205b3ddff7045) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8150252f4b55676d9a5e4c35057d75a1') in 0.011093 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 78.773223 seconds.
+  path: Assets/_Materials/Jefe
+  artifactKey: Guid(d412e8879a768c64287ec4de595c74ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Materials/Jefe using Guid(d412e8879a768c64287ec4de595c74ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bd6970b4a817fc3bf8b130556be37fc') in 0.001619 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 35.298874 seconds.
+  path: Assets/_Models/Pumpkinhulk L Shaw.fbx
+  artifactKey: Guid(0d43d34cdbfd9f240a2af2d8bc2047b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Models/Pumpkinhulk L Shaw.fbx using Guid(0d43d34cdbfd9f240a2af2d8bc2047b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fb2f942d79718e13cb09b877a21d438') in 0.128813 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 38.841083 seconds.
+  path: Assets/_Models/Pumpkinhulk L Shaw.fbx
+  artifactKey: Guid(0d43d34cdbfd9f240a2af2d8bc2047b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Models/Pumpkinhulk L Shaw.fbx using Guid(0d43d34cdbfd9f240a2af2d8bc2047b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26b206fca236d9f85cd75859f8077a98') in 0.032828 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.213791 seconds.
+  path: Assets/_Models/Pumpkinhulk L Shaw.fbx
+  artifactKey: Guid(0d43d34cdbfd9f240a2af2d8bc2047b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Models/Pumpkinhulk L Shaw.fbx using Guid(0d43d34cdbfd9f240a2af2d8bc2047b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '474ee13eb33ccbec4182c175eaeaa279') in 0.026687 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 83.868470 seconds.
+  path: Assets/_Animations
+  artifactKey: Guid(101fd0ded5308c34e97ccc607ab2b308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Animations using Guid(101fd0ded5308c34e97ccc607ab2b308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eae816c279122dccc03d3d15a7fa45af') in 0.007257 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 303.626165 seconds.
+  path: Assets/_Animations/running crawl.fbx
+  artifactKey: Guid(d027cade195525141916895cdf6db7cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Animations/running crawl.fbx using Guid(d027cade195525141916895cdf6db7cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35fb62106b11ca3c1ea9c22c1d607be2') in 0.011535 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.647558 seconds.
+  path: Assets/_Animations/zombie attack.fbx
+  artifactKey: Guid(d4149a28d91b04b43a2e99d46ddd4bfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Animations/zombie attack.fbx using Guid(d4149a28d91b04b43a2e99d46ddd4bfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '856b01f707e57b38a83a0be55cda0d86') in 0.011905 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.575763 seconds.
+  path: Assets/_Animations/zombie crawl.fbx
+  artifactKey: Guid(6dbfe7cf6af808a40a0162c68a7b6147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Animations/zombie crawl.fbx using Guid(6dbfe7cf6af808a40a0162c68a7b6147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c3183423de8438eca6afc454c90aab5') in 0.013352 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.265209 seconds.
+  path: Assets/_Animations/mixamo.com.anim
+  artifactKey: Guid(b9a0d8112bf967340936fe47d2077ea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Animations/mixamo.com.anim using Guid(b9a0d8112bf967340936fe47d2077ea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d4717882a4aced4dfac82b3f06b7c79') in 0.014842 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.631506 seconds.
+  path: Assets/_Animations/running crawl.anim
+  artifactKey: Guid(b9a0d8112bf967340936fe47d2077ea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Animations/running crawl.anim using Guid(b9a0d8112bf967340936fe47d2077ea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a007f535a33bb148766da4914bda3e3a') in 0.007330 seconds 
