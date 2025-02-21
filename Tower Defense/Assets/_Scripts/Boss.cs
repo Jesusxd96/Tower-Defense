@@ -7,12 +7,16 @@ public class Boss : MonoBehaviour
 {
     public GameObject objetivo;
     public int vida = 100;
+    [Tooltip("Variable utilizada para modificar la velocidad del enemigo.")]
+    public float speed = 2f;
 
     public Animator Anim;
     // Start is called before the first frame update
     void Start()
     {
+        objetivo = GameObject.FindGameObjectWithTag("Objetivo");
         GetComponent<NavMeshAgent>().SetDestination(objetivo.transform.position);
+        GetComponent<NavMeshAgent>().speed = speed;
         Anim = GetComponent<Animator>();
         Anim.SetBool("isMoving", true);
     }
@@ -28,6 +32,7 @@ public class Boss : MonoBehaviour
         {
             Anim.SetBool("isMoving", false);
             Anim.SetTrigger("OnObjectiveReached");
+            this.gameObject.GetComponent<Rigidbody>().isKinematic = true;
         }
     }
     public void Danar()

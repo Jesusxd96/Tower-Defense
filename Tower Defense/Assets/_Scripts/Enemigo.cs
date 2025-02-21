@@ -14,6 +14,7 @@ public class Enemigo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        objetivo = GameObject.FindGameObjectWithTag("Objetivo");
         GetComponent<NavMeshAgent>().SetDestination(objetivo.transform.position);
         Anim = GetComponent<Animator>();
         Anim.SetBool("isMoving", true);
@@ -30,6 +31,7 @@ public class Enemigo : MonoBehaviour
         {
             Anim.SetBool("isMoving", false);
             Anim.SetTrigger("OnObjectiveReached");
+            this.gameObject.GetComponent<Rigidbody>().isKinematic = true;
         }
     }
     public void Danar()
