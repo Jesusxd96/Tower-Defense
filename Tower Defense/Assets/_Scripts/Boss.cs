@@ -3,44 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Boss : MonoBehaviour
+public class Boss : EnemigoBase
 {
-    public GameObject objetivo;
-    public int vida = 100;
-    [Tooltip("Variable utilizada para modificar la velocidad del enemigo.")]
-    public float speed = 2f;
-
-    public Animator Anim;
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        objetivo = GameObject.FindGameObjectWithTag("Objetivo");
-        GetComponent<NavMeshAgent>().SetDestination(objetivo.transform.position);
-        GetComponent<NavMeshAgent>().speed = speed;
-        Anim = GetComponent<Animator>();
-        Anim.SetBool("isMoving", true);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "Objetivo")
-        {
-            Anim.SetBool("isMoving", false);
-            Anim.SetTrigger("OnObjectiveReached");
-            this.gameObject.GetComponent<Rigidbody>().isKinematic = true;
-        }
-    }
-    public void Danar()
-    {
-        objetivo?.GetComponent<Objetivo>().RecibirDano(40);
-    }
-    public void RecibirDano(int dano = 5)
-    {
-        vida -= dano;
+        vida = 200;
+        _dano = 40;
     }
 }
