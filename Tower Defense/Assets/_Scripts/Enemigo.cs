@@ -10,4 +10,10 @@ public class Enemigo : EnemigoBase
         vida = 50;
         _dano = 10;
     }
+
+    public override void OnDestroy()
+    {
+        base.OnDestroy();
+        referenciaAdminJuego.enemigosBaseDerrotados++;
+    }
 }

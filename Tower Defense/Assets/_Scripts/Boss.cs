@@ -10,4 +10,9 @@ public class Boss : EnemigoBase
         vida = 200;
         _dano = 40;
     }
+    public override void OnDestroy()
+    {
+        base.OnDestroy();
+        referenciaAdminJuego.enemigosJefeDerrotados++;
+    }
 }
