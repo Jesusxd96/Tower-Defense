@@ -2210,7 +2210,7 @@ GameObject:
   - component: {fileID: 8325522525396612530}
   m_Layer: 0
   m_Name: Pumpkinhulk L Shaw
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2315,5 +2315,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objetivo: {fileID: 0}
   vida: 100
+  _dano: 5
   speed: 1.5
+  recursosGanados: 200
+  referenciaAdminJuego: {fileID: 0}
+  referenciaSpawner: {fileID: 0}
   Anim: {fileID: 2513192252055455776}

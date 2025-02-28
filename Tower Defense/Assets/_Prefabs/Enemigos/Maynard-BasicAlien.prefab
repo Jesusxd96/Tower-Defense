@@ -296,7 +296,7 @@ GameObject:
   - component: {fileID: 2275472392977338350}
   m_Layer: 0
   m_Name: Maynard-BasicAlien
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -401,7 +401,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objetivo: {fileID: 0}
   vida: 100
-  damage: 10
+  _dano: 5
+  speed: 2
+  recursosGanados: 200
+  referenciaAdminJuego: {fileID: 0}
+  referenciaSpawner: {fileID: 0}
   Anim: {fileID: 5692145018291279790}
 --- !u!1 &1885644532814037535
 GameObject:

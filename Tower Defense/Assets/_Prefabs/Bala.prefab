@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6091581127236244297}
   - component: {fileID: 6091581127236244146}
   - component: {fileID: 6091581127236244149}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Bala
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,9 +110,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destino: {x: 0, y: 0, z: 0}
-  velocidad: 20
+  velocidad: 30
   enemigo: {fileID: 0}
-  _dano: 0
+  _dano: 40
 --- !u!54 &6091581127236244149
 Rigidbody:
   m_ObjectHideFlags: 0
