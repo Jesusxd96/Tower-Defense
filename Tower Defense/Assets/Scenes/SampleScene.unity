@@ -1022,7 +1022,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 460335e9dc2c33f4987c79ce4da6ab8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  recursos: 0
+  recursos: 800
   enemigosBaseDerrotados: 0
   enemigosJefeDerrotados: 0
 --- !u!4 &230609979
@@ -1791,6 +1791,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   referenciaAdminToque: {fileID: 578593462}
+  referenciaAdminJuego: {fileID: 230609978}
+  referenciaSpawner: {fileID: 1815685620}
+  Objetivo: {fileID: 1167354281}
   torreSeleccionada: 0
   prefabsTorres:
   - {fileID: 3226997635556805817, guid: 07e5de9afe68ec6479a3f965dd88f87b, type: 3}
@@ -1798,6 +1801,7 @@ MonoBehaviour:
   - {fileID: 1726406117822427998, guid: 1e98e0ba0f56e9f40b48b302cadb537a, type: 3}
   - {fileID: 1859486948416114097, guid: 962c9839116b64a4fb3eda7fa208d0a5, type: 3}
   - {fileID: 5493994170729556593, guid: 7dfccaedb9463034ebef215d723f434d, type: 3}
+  torresInstanciadas: []
 --- !u!1001 &557221762
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2070,6 +2074,30 @@ MonoBehaviour:
       - m_Target: {fileID: 1815685620}
         m_TargetAssemblyTypeName: SpawnerEnemigos, Assembly-CSharp
         m_MethodName: EmpezarOleada
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 168324260}
+        m_TargetAssemblyTypeName: AdministradorUI, Assembly-CSharp
+        m_MethodName: OcultarMenuOlaGanada
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 230609978}
+        m_TargetAssemblyTypeName: AdminJuego, Assembly-CSharp
+        m_MethodName: ResetValores
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

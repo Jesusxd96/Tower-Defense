@@ -37,22 +37,22 @@ public class AdministradorUI : MonoBehaviour
         referenciaAdminJuego.EnRecursosModificados -= ActualizarRecursos;
     }
 
-    private void ActualizarRecursos()
+    public void ActualizarRecursos()
     {
         textoRecursos.text = $"Recursos: {referenciaAdminJuego.recursos}";
     }
 
-    private void MostrarMensajeUltimoEnemigo()
+    public void MostrarMensajeUltimoEnemigo()
     {
         mensajeFinOla.SetActive(true);
         Invoke("OcultarMensajeUltimoEnemigo", 3);
     }
-    private void OcultarMensajeUltimoEnemigo()
+    public void OcultarMensajeUltimoEnemigo()
     {
         mensajeFinOla.SetActive(false);
     }
 
-    private void ActualizarOla()
+    public void ActualizarOla()
     {
         textoOleada.text = $"Ola: {referenciaSpawner.oleada}";
         OcultarMenuOlaGanada();
@@ -64,7 +64,7 @@ public class AdministradorUI : MonoBehaviour
         textoJefes.text = $"JEFES: \t\t {referenciaAdminJuego.enemigosJefeDerrotados}";
         menuOlaGanada.SetActive(true);
     }
-    private void OcultarMenuOlaGanada()
+    public void OcultarMenuOlaGanada()
     {
         menuOlaGanada.SetActive(false);
     }

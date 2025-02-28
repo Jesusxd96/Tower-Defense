@@ -64,7 +64,7 @@ public class AdministradorTorres : MonoBehaviour
                 foreach(GameObject torre in torresInstanciadas)
                 {
                     torre.GetComponent<TorreBase>().enemigo = enemigoMasCercano;
-                    torre.GetComponent<TorreBase>().Dispara();
+                    torre.GetComponent<TorreBase>().Disparar();
                 }
                 if(EnEnemigoObjetivoActualizado != null)
                 {
@@ -72,17 +72,27 @@ public class AdministradorTorres : MonoBehaviour
                 }
             }
         }
+        Invoke("ActualizarObjetivo", 3);//Se le agrego para que esta funcion se siga llamando a si misma
     }
     private void CrearTorre(GameObject plataforma)
     {
-        if (plataforma.transform.childCount == 0)
+        int costo = torreSeleccionada switch
         {
+            TorreSeleccionada.Torre1 => 400,
+            TorreSeleccionada.Torre2 => 600,
+            TorreSeleccionada.Torre3 => 800,
+            _ => 0
+        };//Switch anonimo, se llevan bien con los enums, pero igual es en casos especificos.
+        if (plataforma.transform.childCount == 0 && referenciaAdminJuego.recursos>=costo)
+        {
+            referenciaAdminJuego.ModificarRecursos(-costo);//Se le manda en negativo para que este lo reste
             Debug.Log("Creando torre");
             int indiceTorre = (int)torreSeleccionada;
             Vector3 posParaInstanciar = plataforma.transform.position;
             posParaInstanciar.y += 0.5f;
             GameObject torreInstanciada = Instantiate<GameObject>(prefabsTorres[indiceTorre], posParaInstanciar, Quaternion.identity);
             torreInstanciada.transform.SetParent(plataforma.transform);
+            torresInstanciadas.Add(torreInstanciada);
         }
     }
     public void ConfigurarTorre(int torre)
