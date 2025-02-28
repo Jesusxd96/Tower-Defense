@@ -6,21 +6,32 @@ using UnityEngine;
 public class AdministradorTorres : MonoBehaviour
 {
     public AdministradorToques referenciaAdminToque;
+    public AdminJuego referenciaAdminJuego;
+    public SpawnerEnemigos referenciaSpawner;
+    public GameObject Objetivo;
+
     public enum TorreSeleccionada
     {
         Torre1, Torre2, Torre3, Torre4, Torre5
     }
     public TorreSeleccionada torreSeleccionada;
     public List<GameObject> prefabsTorres;
+    public List<GameObject> torresInstanciadas;
+
+    public delegate void EnemigoObjetivoActualizado();
+    public event EnemigoObjetivoActualizado EnEnemigoObjetivoActualizado;
 
     private void OnEnable()
     {
         referenciaAdminToque.EnPlataformaTocada += CrearTorre;
+        referenciaSpawner.EnOleadaIniciada += ActualizarObjetivo;
+        torresInstanciadas = new List<GameObject>();
     }
 
     private void OnDisable()
     {
         referenciaAdminToque.EnPlataformaTocada -= CrearTorre;
+        referenciaSpawner.EnOleadaIniciada -= ActualizarObjetivo;
     }
     // Start is called before the first frame update
     void Start()
@@ -32,6 +43,35 @@ public class AdministradorTorres : MonoBehaviour
     void Update()
     {
 
+    }
+    private void ActualizarObjetivo()
+    {
+        if (referenciaSpawner.laOleadaHaIniciado)
+        {
+            float distanciaMasCorta = float.MaxValue;
+            GameObject enemigoMasCercano = null;
+            foreach(GameObject enemigo in referenciaSpawner.EnemigosGenerados)
+            {
+                float dist = Vector3.Distance(enemigo.transform.position, Objetivo.transform.position);
+                if (dist < distanciaMasCorta)
+                {
+                    distanciaMasCorta = dist;
+                    enemigoMasCercano = enemigo;
+                }
+            }
+            if (enemigoMasCercano != null)
+            {
+                foreach(GameObject torre in torresInstanciadas)
+                {
+                    torre.GetComponent<TorreBase>().enemigo = enemigoMasCercano;
+                    torre.GetComponent<TorreBase>().Dispara();
+                }
+                if(EnEnemigoObjetivoActualizado != null)
+                {
+                    EnEnemigoObjetivoActualizado();
+                }
+            }
+        }
     }
     private void CrearTorre(GameObject plataforma)
     {
