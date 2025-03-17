@@ -7,6 +7,7 @@ public class Bala : MonoBehaviour, IAtacante
     public Vector3 destino;
     public float velocidad = 20;
     public GameObject enemigo;
+    public GameObject enemigo2;//Tal vez le pueda mover aqui?
     public int _dano;
     // Start is called before the first frame update
     void Start()
